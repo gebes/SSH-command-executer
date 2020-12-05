@@ -1,0 +1,9 @@
+<user>
+<password>
+<IP>
+<Port>
+<command>
+<command>
+<command>
+<command>
+...
