@@ -1,4 +1,4 @@
-package aut.markus;
+package at.markus;
 
 import com.jcraft.jsch.ChannelExec;
 import com.jcraft.jsch.JSch;
@@ -23,7 +23,9 @@ public class Main {
             session.setConfig("StrictHostKeyChecking", "no");
             session.connect(100000);
             channel = (ChannelExec)session.openChannel("exec");
+
             channel.setCommand(command);
+
             final ByteArrayOutputStream responseStream = new ByteArrayOutputStream();
             channel.setOutputStream(responseStream);
             channel.connect();
